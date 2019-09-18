@@ -30,7 +30,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
                 .withClient("CLIENTID")
-                .secret("CLIENT-SECRET")
+                .secret("{noop}CLIENT-SECRET")
                 .authorizedGrantTypes(GRANT_TYPE_PASSWORD, AUTHORIZATION_CODE, REFRESH_TOKEN)
                 .scopes(SCOPE_READ, SCOPE_WRITE)
                 .accessTokenValiditySeconds(VALID_FOREVER)
