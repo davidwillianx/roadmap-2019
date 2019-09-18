@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/i")
-@Secured("ADMIN")
+//@Secured("ADMIN")
 public class IndexResource {
 
     @GetMapping
