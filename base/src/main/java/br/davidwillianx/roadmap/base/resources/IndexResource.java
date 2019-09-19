@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/i")
+@RequestMapping("/api/index")
 //@Secured("ADMIN")
 public class IndexResource {
 
